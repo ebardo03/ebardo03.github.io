@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://ericbardon.com/files/favicon.png">
+
+  
+  <!-- SEO / Metadata -->
+  <title>Research - Eric Bardon</title>
+  <meta name="description" content="Research publications by Eric Bardon">
+  <meta name="author" content="Eric Bardon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="flex-container">
+      
+      <!-- Header will be loaded dynamically from header.html -->
+      <div id="header"></div>
+      <script>
+        fetch('header.html')
+          .then(r => r.text())
+          .then(t => document.getElementById('header').innerHTML = t);
+      </script>
+
+      <div class="content-area">
+        <!-- Column 2 (full remaining width) -->
+        <span class="section-title">Research</span> <br> <br> 
+
+        <!-- Placeholder message while no research is available -->
+        <p>No research entries available at the moment.</p>
+
+        <!--
+          To add a research entry in the future, follow this template:
+
+          <a href="LINK_TO_PUBLICATION" target="_blank" class="paper-title">TITLE OF PAPER</a> <br>
+          <span class="paper-authors">AUTHOR NAMES</span> <br>
+          <span class="paper-journal">JOURNAL NAME (YEAR)</span>
+          <span class="separator">|</span>
+          <a href="LINK_TO_PDF" target="_blank" class="paper-link">PDF</a>
+          <br> <br>
+
+          Example:
+          <a href="https://doi.org/10.1101/2025.08.21.671540" target="_blank" class="paper-title">
+            Similar destabilization of neural dynamics under different general anesthetics
+          </a> <br>
+          <span class="paper-authors">Adam J. Eisen, Alexandra G. Bardon, ...</span> <br>
+          <span class="paper-journal">bioRxiv (2025)</span>
+          <span class="separator">|</span>
+          <a href="files/destabilization.pdf" target="_blank" class="paper-link">PDF</a>
+          <br> <br>
+        -->
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

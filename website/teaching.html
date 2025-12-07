@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO / Metadata -->
+  <title>Teaching - Alexandra Bardon</title>
+  <meta name="description" content="Teaching information for Alexandra Bardon">
+  <meta name="author" content="Alex Bardon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="flex-container">
+      
+      <div id="header"></div>
+      <script>
+        fetch('header.html')
+          .then(r => r.text())
+          .then(t => document.getElementById('header').innerHTML = t);
+      </script>
+
+      <div class="content-area">
+        <!-- Column 2 (full remaining width) -->
+        <span class="section-title">Teaching</span> <br> <br> 
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

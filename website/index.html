@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://ericbardon.com/files/favicon.png">
+  <!-- SEO / Metadata -->
+  <title>Eric Bardon</title>
+  <meta name="description" content="Eric Bardon is a high school student.">
+  <meta name="keywords" content="Eric Bardon, Brookline, Brookline High School, BHS">
+  <meta name="author" content="Eric Bardon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main-container">
+      <div class="flex-container">
+
+        <div id="header"></div>
+        <script>
+          fetch('header.html')
+            .then(r => r.text())
+            .then(t => document.getElementById('header').innerHTML = t);
+        </script>
+
+        <div class="content-area">
+          <!-- Column 2 (full remaining width) -->
+          <span class="section-title">About Me</span> <br> <br> 
+          Eric Bardon is a senior at <a href="https://bhs.brookline.k12.ma.us/" target="_blank" class="link-primary">Brookline High School</a>, where he takes courses including Linear Algebra, AP Chemistry, AP Biology, and AP Spanish.<br><br>
+
+          He currently works as a research intern at the <a href="https://mootha.med.harvard.edu/" target="_blank" class="link-primary">Mootha Lab</a> at the Broad Institute and Massachusetts General Hospital, conducting computational research on mitochondrial proteomes.<br><br>
+
+          He serves as Vice President and Fundraising Board Member of <a href="https://www.languagevirtual.org/" target="_blank" class="link-primary">Language Virtual</a>, a student-run nonprofit that provides English lessons to students internationally.<br><br>
+
+          Previously, he worked as a campaign fellow for Congressman Jake Auchincloss, where he wrote policy briefs and engaged with voters.<br><br>
+
+          At Brookline High School, Eric chairs the School Legislature and Student Council, where he works on student policy and oversees club funding distribution. He also runs on the varsity cross country and track teams. His interests include biotechnology research, public policy, and athletics.
+          <div class="spacing-div"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
